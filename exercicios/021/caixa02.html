@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: dimgray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        header{
+            background-color: rgb(211, 209, 209);
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(80, 79, 79);
+            padding: 5px;
+            box-shadow: 1px 1px 5px 1px black;
+            
+        }
+        nav > a{
+            color: white;
+            text-decoration: none;
+            margin-right: 25px;
+
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: aqua;
+        }
+        main{
+            background-color: rgb(211, 209, 209);
+            padding: 10px;
+            margin: 10px;
+            
+        }
+        #mimi{
+            border-radius: 5px 5px;
+            background-color: rgb(161, 161, 161);
+        }
+        #mimi > aside{
+            background-color: rgb(122, 122, 122);
+            text-align: right;
+        }
+        #ari{
+            border-radius: 5px 5px;
+            background-color: rgb(161, 161, 161);
+        }
+        #ari > aside{
+            background-color: rgb(122, 122, 122);
+            text-align: right;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <h1>Ai calica olha o menu</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+     </header>
+
+     <main>
+        <section>
+            <article id="mimi">
+                <h2>A historia do Michel</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ex non soluta beatae impedit optio veniam, libero quae magni pariatur tempora! Ab atque voluptatem quas, saepe impedit illo ipsa debitis!</p>
+                <aside>
+                    <p>Artigo escrito por Ariana Grande</p>
+                </aside>
+            </article>
+            <article id="ari">
+                <h2>A historia da Ariana</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium possimus autem rerum nostrum! Dolorum ex eius dolore incidunt suscipit tenetur temporibus amet? Sequi, itaque dicta! Laudantium aliquam sit eum facere.</p>
+                <aside>
+                    <p>Artigo escrito po Michel Fogaça</p>
+                </aside>
+            </article>
+        </section>
+     </main>
+
+     <footer>
+        <p>Desenvolvido por Michael Jakcson</p>
+     </footer>
+</body>
+</html>
