@@ -3,9 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.num{
+            text-align: center;
+        }
+        td.posi{
+            text-align: right;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgrey;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Uso de tabelas grandes</h1>
+<!--
+    anatomia para tabelas grandes
+    TABLE
+        CAPTION
+        THEAD (opsional)
+            tr, td, th
+        TBODY
+            tr, td, th
+        TFOOT (opsional)
+            tr, td, th
+-->
+    <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col" style="width: 50px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="num">1</td>
+                <td>São Paulo</td>
+                <td class="posi">45 973 190</td>
+            </tr>
+            <tr>
+                <td class="num">2</td>
+                <td>Minas Gerais</td>
+                <td class="posi">21 322 692</td>
+            </tr>
+            <tr>
+                <td class="num">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="posi">17 219 679</td>
+            </tr>
+            
+            <tr>
+                <td class="num">4</td>
+                <td>Bahia</td>
+                <td class="posi">14 850 513</td>
+            </tr>
+            <tr>
+                <td class="num">5</td>
+                <td>Paraná</td>
+                <td class="posi">11 824 665</td>
+            </tr>
+            <tr>
+                <td class="num">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="posi">11 229 915</td>
+            </tr>
+            <tr>
+                <td class="num">7</td>
+                <td>Pernambuco</td>
+                <td class="posi">9 539 029	</td>
+            </tr>
+            <tr>
+                <td class="num">8</td>
+                <td>Ceará</td>
+                <td class="posi">9 233 656</td>
+            </tr>
+            <tr>
+                <td class="num">9</td>
+                <td>Pará</td>
+                <td class="posi">8 664 306</td>
+            </tr>
+            <tr>
+                <td class="num">10</td>
+                <td>Santa Catarina</td>
+                <td class="posi">8 058 447</td>
+            </tr>
+            <tr>
+                <td class="num">11</td>
+                <td>Goiás</td>
+                <td class="posi">7 350 483</td>
+            </tr>
+            <tr>
+                <td class="num">12</td>
+                <td>Maranhão</td>
+                <td class="posi">7 010 960</td>
+            </tr>
+            <tr>
+                <td class="num">13</td>
+                <td>Amazonas</td>
+                <td class="posi">4 281 209</td>
+            </tr>
+            <tr>
+                <td class="num">14</td>
+                <td>Paraíba</td>
+                <td class="posi">4 145 040</td>
+            </tr>
+            <tr>
+                <td class="num">15</td>
+                <td>Espírito Santo</td>
+                <td class="posi">4 102 129</td>
+            </tr>
+            <tr>
+                <td class="num">16</td>
+                <td>Mato Grosso</td>
+                <td class="posi">3 836 399</td>
+            </tr>
+            <tr>
+                <td class="num">17</td>
+                <td>Rio Grande do Norte</td>
+                <td class="posi">3 446 071</td>
+            </tr>
+            <tr>
+                <td class="num">18</td>
+                <td>Piauí</td>
+                <td class="posi">3 375 646</td>
+            </tr>
+            <tr>
+                <td class="num">19</td>
+                <td>Alagoas</td>
+                <td class="posi">3 220 104</td>
+            </tr>
+            <tr>
+                <td class="num">20</td>
+                <td>Distrito Federal</td>
+                <td class="posi">2 982 815</td>
+            </tr>
+            <tr>
+                <td class="num">21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="posi">2 901 895</td>
+            </tr>
+            <tr>
+                <td class="num">22</td>
+                <td>Sergipe</td>
+                <td class="posi">2 291 077</td>
+            </tr>
+            <tr>
+                <td class="num">23</td>
+                <td>Rondônia</td>
+                <td class="posi">1 746 227</td>
+            </tr>
+            <tr>
+                <td class="num">24</td>
+                <td>Tocantins</td>
+                <td class="posi">1 577 342</td>
+            </tr>
+            <tr>
+                <td class="num">25</td>
+                <td>Acre</td>
+                <td class="posi">880 631</td>
+            </tr>
+            <tr>
+                <td class="num">26</td>
+                <td>Amapá</td>
+                <td class="posi">802 837</td>
+            </tr>
+            <tr>
+                <td class="num">27</td>
+                <td>Roraima</td>
+                <td class="posi">716 793</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <th scope="row">Total de Hbitantes</th>
+                <td class="posi"><strong>212 583 720</strong></td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
