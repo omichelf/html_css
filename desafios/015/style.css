@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+body{
+    background: brown url(imagens/fundo-madeira.jpg) center center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+}
